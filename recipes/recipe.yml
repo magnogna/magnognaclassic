@@ -52,6 +52,7 @@ modules:
     remove:
       packages:
         - firefox
+        - gnome-software
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
@@ -67,10 +68,8 @@ modules:
       enabled:
       - cockpit.socket
 
-  ## - type: script
-  ##  snippets:
-  ##    - "gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true" #enable middleclick paste
-  ##  scripts:
-  ##   - ble.sh
+  - type: script
+    snippets:
+      - "ln -s /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service"
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
