@@ -28,6 +28,7 @@ modules:
       packages:   
       #gnome
         - gnome-shell-extension-unite
+        - gnome-shell-extension-dash-to-panel
         - gnome-shell-extension-just-perfection 
         - yaru-theme
         - gnome-shell-extension-appindicator
