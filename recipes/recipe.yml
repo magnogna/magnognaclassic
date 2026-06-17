@@ -24,18 +24,14 @@ modules:
         - kylegospo/webapp-manager
         
   - type: dnf
-    group-install:
-      with-optional: true
-      packages:
-        - cinnamon-desktop
-      exclude:
-        - lightdm
-        
-  - type: dnf
     install:
       packages:   
       #utils
         - webapp-manager
+        - cinnamon 
+        - cinnamon-control-center 
+        - cinnamon-screensaver
+        - cinnamon-settings-daemon
         - bazaar
         - lshw
         - cockpit
