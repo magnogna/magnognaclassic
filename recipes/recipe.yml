@@ -26,10 +26,22 @@ modules:
   - type: dnf
     install:
       packages:   
+      #gnome
+        - gnome-shell-extension-unite
+        - gnome-shell-extension-just-perfection 
+        - yaru-theme
+        - gnome-shell-extension-appindicator
+        - gnome-shell-extension-caffeine 
+        - gnome-tweaks
+        - dconf-editor
+        - gnome-calculator
+        - gnome-calendar
+        - papers
+        - loupe
+        - adw-gtk3-theme
       #utils
         - webapp-manager
         - gnome-classic-session
-        - gnome-flashback
         - bazaar
         - lshw
         - cockpit
@@ -45,9 +57,7 @@ modules:
 
     remove:
       packages:
-        - firefox
         - gnome-software
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
