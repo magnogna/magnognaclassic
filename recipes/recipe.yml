@@ -34,6 +34,8 @@ modules:
       packages:   
       #utils
         - webapp-manager
+        - lightdm-gtk
+        - lightdm-gtk-greeter-settings
         - bazaar
         - lshw
         - cockpit
