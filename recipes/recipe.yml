@@ -34,7 +34,6 @@ modules:
         - lshw
         - cockpit
         - cockpit-podman
-        - sddm
       #build
         - make
         - gawk
