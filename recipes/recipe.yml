@@ -44,6 +44,8 @@ modules:
       #appimages
         - fuse
         - fuse-libs
+      #VM
+        - spice-vdagent
         
     remove:
       packages:
