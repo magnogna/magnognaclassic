@@ -30,6 +30,8 @@ modules:
         - yaru-theme
         - gnome-shell-extension-appindicator
         - gnome-shell-extension-caffeine 
+        - gnome-shell-extension-dash-to-panel 
+        - gnome-shell-extensions
         - gnome-tweaks
         - dconf-editor
         - gnome-calculator
@@ -37,7 +39,6 @@ modules:
         - papers
         - loupe
       #utils
-        - gnome-classic-session
         - cockpit
         - cockpit-podman
       #appimages
@@ -66,6 +67,10 @@ modules:
           - de.haeckerfelix.Fragments
           - net.codelogistics.webapps
 
+  - type: gnome-extensions
+    install:
+      - Transparent Top Bar (Adjustable transparency)
+      - Gtk4 Desktop Icons NG (DING)
   - type: systemd
     system:
       enabled:
