@@ -20,15 +20,12 @@ modules:
   - type: dnf
     repos:
       copr:
-        - ublue-os/packages
-        - kylegospo/webapp-manager
+        - david35mm/yaru-theme
         
   - type: dnf
     install:
       packages:   
       #gnome
-        - gnome-shell-extension-unite
-        - gnome-shell-extension-dash-to-panel
         - gnome-shell-extension-just-perfection 
         - yaru-theme
         - gnome-shell-extension-appindicator
@@ -39,17 +36,10 @@ modules:
         - gnome-calendar
         - papers
         - loupe
-        - adw-gtk3-theme
       #utils
-        - webapp-manager
         - gnome-classic-session
-        - bazaar
-        - lshw
         - cockpit
         - cockpit-podman
-      #build
-        - make
-        - gawk
       #appimages
         - fuse
         - fuse-libs
@@ -67,6 +57,14 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - com.github.tchx84.Flatseal
+          - io.github.kolunmi.Bazaar
+          - org.onlyoffice.desktopeditors
+          - page.codeberg.libre_menu_editor.LibreMenuEditor
+          - org.gnome.Showtime
+          - org.gnome.Decibels
+          - de.haeckerfelix.Shortwave
+          - de.haeckerfelix.Fragments
+          - net.codelogistics.webapps
 
   - type: systemd
     system:
